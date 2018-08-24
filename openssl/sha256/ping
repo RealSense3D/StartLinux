@@ -1,0 +1,7 @@
+#! /bin/bash
+
+# https://blog.csdn.net/c_duoduo/article/details/43889759
+
+gcc -o pang *.c
+
+./pang

@@ -1,0 +1,8 @@
+[2018.06.15 14:47:21.359][../simTransport/mysyslog.c][main][0055][INFO]Version [1.0], Build time[Jun 15 2018 14:47:16].
+[2018.06.15 14:47:21.360][../simTransport/mysyslog.c][main][0059][FATAL]The Fatal log info!
+[2018.06.15 14:47:21.361][../simTransport/mysyslog.c][main][0063][ERROR]The Error log info!
+[2018.06.15 14:47:21.362][../simTransport/mysyslog.c][main][0067][WARN]The Warn log info!
+[2018.06.15 14:47:21.363][../simTransport/mysyslog.c][main][0071][INFO]The Info log info!
+[2018.06.15 14:47:21.363][../simTransport/mysyslog.c][main][0075][TRACE]The Trace log info!
+[2018.06.15 14:47:21.363][../simTransport/mysyslog.c][main][0079][DEBUG]The Debug log info!
+[2018.06.15 14:47:21.363][../simTransport/mysyslog.c][GetEmployeeInfo][0122][INFO]EmployeeName is name, EmployeeAge is 3

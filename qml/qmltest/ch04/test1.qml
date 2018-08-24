@@ -1,0 +1,60 @@
+import QtQuick 2.0
+
+Item {
+    id: root
+    width: 800
+    height: 800
+    onHeightChanged:	console.log('height:',	height)
+    onWidthChanged: console.log("width: ", width)
+    Text {
+        id: mytext
+        text: qsTr("text")
+        width: 500
+        height: 500
+        anchors{
+            horizontalCenter: root.horizontalCenter
+            verticalCenter: root.verticalCenter
+        }
+        focus: true
+        color: focus?"red":"black"
+    }
+    Text {
+        //	(1)	identifier
+        id:	thisLabel
+
+        //	(2)	set	x-	and	y-position
+        x:	24;	y:	16
+
+        //	(3)	bind	height	to	2	*	width
+        height:	2	*	width
+
+        //	(4)	custom	property
+        property	int	times:	24
+
+        //	(5)	property	alias
+        property	alias	anotherTimes:	thisLabel.times
+
+        //	(6)	set	text	appended	by	value
+        text:	"Greetings	"	+	times
+
+        //	(7)	font	is	a	grouped	property
+        font.family:	"Ubuntu"
+        font.pixelSize:	24
+
+        //	(8)	KeyNavigation	is	an	attached	property
+        KeyNavigation.tab:	otherLabel
+
+        //	(9)	signal	handler	for	property	changes
+        onHeightChanged:	console.log('height:',	height)
+
+        //	focus	is	neeed	to	receive	key	events
+        focus:	true
+
+        //	change	color	based	on	focus	value
+        color:	focus?"red":"black"
+
+        onFocusChanged: console.log("wwwwww")
+
+
+    }
+}

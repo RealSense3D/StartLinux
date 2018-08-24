@@ -1,0 +1,21 @@
+LOOGSON-MIB DEFINITIONS::=BEGIN
+    IMPORTS
+        MODULE-IDENTITY,enterprises,OBJECT-TYPE,Integer32,TimeTicks
+            FROM SNMPv2-SMI
+        OBJECT-GROUP, NOTIFICATION-GROUP
+            FROM SNMPv2-CONF
+        TEXTUAL-CONVENTION,  DisplayString
+            FROM SNMPv2-TC;
+
+    loogson OBJECT IDENTIFIER ::= { enterprises 29881 }
+    cq8401  OBJECT IDENTIFIER ::= { loogson 3 }
+    test    OBJECT IDENTIFIER ::= { cq8401 1 } 
+   
+    machType OBJECT-TYPE
+        SYNTAX OCTET STRING
+        MAX-ACCESS read-only
+        STATUS current
+        DESCRIPTION "shebeileixing"
+        ::={ test 1 }
+
+END

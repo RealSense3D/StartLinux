@@ -1,0 +1,9 @@
+gcc -o client.out client.c rs_sock_af_inet.c rs_sock_af_inet.h
+
+gcc -o server.out server.c rs_sock_af_inet.c rs_sock_af_inet.h
+
+gcc -o getname.out rs_getname.c
+
+gcc -o getdate-tcp.out rs_getdate-tcp.c
+
+gcc -o getdate-udp.out rs_getdate-udp.c

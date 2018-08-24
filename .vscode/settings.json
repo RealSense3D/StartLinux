@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "LIBSMI-TEST-MIB": "dockerfile",
+        "smi.h": "c",
+        "config.h": "c",
+        "typeinfo": "c",
+        "socket.h": "c",
+        "rs_sock_af_unix.h": "c",
+        "stdlib.h": "c",
+        "types.h": "c",
+        "rs_sock_af_inet.h": "c",
+        "stdio.h": "c",
+        "inet.h": "c",
+        "in.h": "c"
+    }
+}

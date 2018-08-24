@@ -1,0 +1,26 @@
+TEST-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+    MODULE-IDENTITY,
+    OBJECT-TYPE, 
+    Integer32,
+      FROM SNMPv2-SMI;
+  
+    testMIB MODULE-IDENTITY
+    LAST-UPDATED "200711130000Z"
+    REVISION      "200711130000Z"
+    DESCRIPTION
+            "This is initial version of my test MIB."
+
+    ::= {enterprises 1 }
+
+    SynLock OBJECT-TYPE
+    SYNTAX Integer32(0..100)
+    ACCESS read-only
+    STATUS current
+    DESCRIPTION
+            "Syn Lock Flag"
+   
+    ::= {testMIB 1}
+
+END

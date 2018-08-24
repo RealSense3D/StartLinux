@@ -1,0 +1,48 @@
+init succ
+read config succ
+Let's go!!!!
+filePath: /home/hostname/Github/StartLinux/libsmi/smi.conf
+	Module.name = SNMPv2-SMI
+	Module.name = SNMPv2-TC
+	Module.name = SNMPv2-CONF
+	Module.name = IPV6-TC
+	Module.name = IEEE1609dot3-MIB
+	==>smiModule.name = IEEE1609dot3-MIB
+	==>smiModule.path = ./IEEE1609dot3-MIB
+	==>smiModule.organization = IEEE P1609
+	==>smiModule.contactinfo = WG E-mail: stds-p1609@ieee.org
+Chair: Thomas M Kurihara
+Postal: 3800 Fairfax Drive, #207
+Arlington, VA USA 22203-1759
+Tel: +1 703-516-9650
+Fax: +1 703-516-4688
+E-mail: tkstds@mindspring.com
+Editor: Kevin S. Smith
+	==>smiModule.description = The MIB module for IEEE 1609.3v3 full use entities.
+iso(1) iso-identified-organization(3) ieee(111)
+standards-association-numbered-series-standards(2) wave-stds(1609)
+dot3(3) v3mib(3)
+	==>smiModule.reference = (null)
+	==>smiModule = 25731168
+	==>smiType = 25787152
+	==>smiType.name = (null)
+	==>smiType.basetype = 1
+	==>smiType.decl = 1
+	==>smiType.format = (null)
+	==>smiType.description = (null)
+	==>smiType.reference = (null)
+	*****************************
+	==>smiRange = 0
+	==>smiNode.name = dot3NumberOfChannelsSupported
+	==>smiNode.oidlen = 10
+	==>smiNode.oid = 1
+	==>smiNode.decl = 6
+	==>smiNode.access = 5
+	==>smiNode.status = 1
+	==>smiNode.format = (null)
+	==>smiNode.description = The number of radio channels that may be simultaneously
+accessed by the device.
+	==>smiNode.reference = (null)
+
+	*****************************
+  dot3NumberOfChannelsSupported   
